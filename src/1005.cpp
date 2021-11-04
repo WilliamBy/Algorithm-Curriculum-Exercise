@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#define PI 3.14159265358979323846
 #include <stdio.h>
 using namespace std;
 
@@ -10,9 +10,9 @@ int main()
     cin >> year_num;
     for (int i = 0; i < year_num; i++) {
         cin >> x >> y;
-        area = M_PI * (x * x + y * y) / 2;
-        printf("Property %d: This property will begin eroding in year %d\n", i + 1, int(area / 50) + 1);
+        area = PI * (x * x + y * y) / 2;
+        printf("Property %d: This property will begin eroding in year %d.\n", i + 1, int(area / 50) + 1);
     }
-    cout << "END OF OUTPUT";
+    cout << "END OF OUTPUT.";
     return 0;
 }
